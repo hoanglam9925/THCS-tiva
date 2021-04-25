@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project RTOS_test2 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../uartstdio.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -Dgcc -DTARGET_IS_TM4C123_RB1 -I"D:/HK2 2021/THCS_Duy/RTOS_test2" -I"D:/HK2 2021/THCS_Duy/RTOS_test2" -I"D:/HK2 2021/THCS_Duy/RTOS_test2/include" -I"D:/HK2 2021/THCS_Duy/RTOS_test2/portable/GCC/ARM_CM4F" -I"C:/ti/TivaWare_C_Series-2.2.0.295" -I"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"uartstdio.d" -MT"uartstdio.o"   -o"uartstdio.o" "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "RTOS_test2.out"
+Invoking: GNU Linker
+"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DPART_TM4C123GH6PM -Dgcc -DTARGET_IS_TM4C123_RB1 -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"RTOS_test2.map" -Wl,--gc-sections -o"RTOS_test2.out" "./croutine.o" "./event_groups.o" "./freertos_demo.o" "./led_task.o" "./list.o" "./main.o" "./queue.o" "./switch_task.o" "./tasks.o" "./timers.o" "./tm4c123gh6pm_startup_ccs_gcc.o" "./uartstdio.o" "./drivers/buttons.o" "./drivers/rgb.o" "./portable/GCC/ARM_CM4F/port.o" "./portable/MemMang/heap_2.o" -Wl,-T"../tm4c123gh6pm.lds"    C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/gcc/libdriver.a 
+Finished building target: "RTOS_test2.out"
+ 
+
+**** Build Finished ****
